@@ -49,7 +49,11 @@
     "bin": "pith",
     "plugins": [
       "@oclif/plugin-help"
-    ]
+    ],
+    "topics": {
+      "apps:favorites": { "description": "manage favorite apps" },
+      "config": { "description": "manage heroku config variables" }
+    }
   },
   "repository": "ashutoshpith/pith",
   "scripts": {
