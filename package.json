@@ -56,7 +56,10 @@
         "description": "manage favorite apps"
       },
       "config": {
-        "description": "manage heroku config variables"
+        "description": "manage config variables"
+      },
+      "file": {
+        "description": "manage file variables with file:set and file:get"
       }
     }
   },

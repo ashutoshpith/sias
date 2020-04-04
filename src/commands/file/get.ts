@@ -2,8 +2,8 @@ import {Command, flags} from "@oclif/command";
 import * as fs from 'fs-extra'
 import * as path from 'path'
 
-export class FileRead extends Command {
-    static description = "file read json/csv";
+export class Get extends Command {
+    static description = "description file read json/csv";
     // static args = [
     //     {name: 'filetype',required: false},
     // ]
@@ -26,18 +26,19 @@ export class FileRead extends Command {
     }
 
     async run(){
-       const {args,flags} = this.parse(FileRead)
-       const avail = ['md', 'txt', 'text']
+       const {flags} = this.parse(Get)
        if(flags.inputfile){
-            if(path.extname(flags.inputfile) ==='json'){
-                const readFile = await fs.readJSON(flags.inputfile);
-                console.dir(readFile)
-                console.log(`running my command with args: ${flags.inputfile}`)
+            const pathAddr = path.format({
+                root:"./",
+                base: flags.inputfile
+            });
+            if(path.extname(flags.inputfile) === '.json'){
+                const readFile = await fs.readJSON(pathAddr);
+                console.log(readFile)
             }
-            else if(path.extname(flags.inputfile) === 'md' 
-                    || path.extname(flags.inputfile) === 'txt'){
-                const readFile = await fs.readFile(flags.inputfile,'utf8');
-                console.dir(readFile)
+            else if(path.extname(flags.inputfile) === '.txt'){
+                const readFile = await fs.readFile(pathAddr,'utf8');
+                console.log(readFile)
             }
 
        }
