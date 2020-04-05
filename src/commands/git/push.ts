@@ -17,6 +17,5 @@ export class Push extends Command{
         ls.on('close', (code) => {
         console.log(`child process exited with code ${code}`);
         });
-        cli.action.stop("process ends...")
     }
 }
