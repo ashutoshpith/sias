@@ -6,15 +6,15 @@ export class Commit extends Command{
   
     static flags = {
       help: flags.help({char: 'h'}),
-    //   message: flags.string({char: 'm', description: 'message to commit'}),
+      message: flags.string({char: 'i', description: 'message to commit'}),
     }
   
     static args = [{name: 'input'}]
     
     async run(){
-       const {argv,flags} = this.parse(Commit);            
+       const {flags} = this.parse(Commit);            
        const ls = spawn(`git add . 
-                        git commit -m "${argv[0]}" `,{shell:true})
+                        git commit -m "${flags.message}" `,{shell:true})
        ls.stdout.on('data', (data) => {
         console.log(`stdout: ${data}`);
       });
