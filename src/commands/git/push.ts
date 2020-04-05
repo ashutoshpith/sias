@@ -1,8 +1,10 @@
 import { Command } from "@oclif/command";
 import { exec, spawn, fork} from "child_process";
+import cli from "cli-ux";
 
 export class Push extends Command{
     async run(){
+        cli.action.start('started processing');
         const ls = spawn(`git push `,{shell:true})
         ls.stdout.on('data', (data) => {
         console.log(`stdout: ${data}`);
@@ -15,5 +17,6 @@ export class Push extends Command{
         ls.on('close', (code) => {
         console.log(`child process exited with code ${code}`);
         });
+        cli.action.stop("process ends...")
     }
 }
