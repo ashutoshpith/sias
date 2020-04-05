@@ -64,6 +64,10 @@
       "file": {
         "description": "manage file variables with file:set and file:get"
       }
+      ,
+      "git": {
+        "description": "manage github with git:commit | git:push | git:pull"
+      }
     }
   },
   "repository": "ashutoshpith/pith",
