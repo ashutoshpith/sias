@@ -17,7 +17,7 @@ export class Commit extends Command{
        const ls = spawn(`git add . 
                         git commit -m "${message}" `,{shell:true})
        ls.stdout.on('data', (data) => {
-        console.log(`stdout: ${data}`);
+        console.log(`stdout message recived: ${data}`);
       });
       
       ls.stderr.on('data', (data) => {

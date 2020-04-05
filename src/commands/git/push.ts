@@ -4,7 +4,7 @@ import cli from "cli-ux";
 
 export class Push extends Command{
     async run(){
-        cli.action.start('started processing');
+        cli.action.start('pushing started !');
         const ls = spawn(`git push `,{shell:true})
         ls.stdout.on('data', (data) => {
         console.log(`stdout: ${data}`);
