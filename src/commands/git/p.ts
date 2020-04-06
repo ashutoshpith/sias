@@ -1,9 +1,15 @@
-import { Command } from "@oclif/command";
+import { Command, flags } from "@oclif/command";
 import { spawn } from "child_process";
 import cli from "cli-ux";
 
 export class P extends Command {
+  static description = "git push with promt commit message";
+  static flags = {
+    help: flags.help({ char: "h" }),
+  };
+
   async run() {
+    const { flags } = this.parse(P);
     const message = await cli.prompt("enter the message to commit: ");
     cli.action.start("pushing started !");
     const ls = spawn(
