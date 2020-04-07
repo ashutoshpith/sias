@@ -3,81 +3,85 @@
 sias commands
 
 [![cli](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/pith.svg)](https://npmjs.org/package/pith)
-[![Downloads/week](https://img.shields.io/npm/dw/pith.svg)](https://npmjs.org/package/pith)
-[![License](https://img.shields.io/npm/l/pith.svg)](https://github.com/ashutoshpith/pith/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/sias.svg)](https://npmjs.org/package/sias)
+[![Downloads/week](https://img.shields.io/npm/dw/sias.svg)](https://npmjs.org/package/sias)
+[![License](https://img.shields.io/npm/l/sias.svg)](https://github.com/ashutoshpith/sias/blob/master/package.json)
 
 <!-- toc -->
-* [sias](#sias)
-* [Usage](#usage)
-* [Commands](#commands)
-* [pith](#pith)
+
+- [sias](#sias)
+- [Usage](#usage)
+- [Commands](#commands)
+- [sias](#sias)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g sias
-$ pith COMMAND
+$ sias COMMAND
 running command...
-$ pith (-v|--version|version)
+$ sias (-v|--version|version)
 sias/1.0.2 linux-x64 node-v12.16.1
-$ pith --help [COMMAND]
+$ sias --help [COMMAND]
 USAGE
-  $ pith COMMAND
+  $ sias COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`pith config:get`](#pith-configget)
-* [`pith config:set`](#pith-configset)
-* [`pith file:get`](#pith-fileget)
-* [`pith file:set`](#pith-fileset)
-* [`pith git:commit [INPUT]`](#pith-gitcommit-input)
-* [`pith git:p`](#pith-gitp)
-* [`pith git:pull [INPUT]`](#pith-gitpull-input)
-* [`pith git:push`](#pith-gitpush)
-* [`pith goodbye`](#pith-goodbye)
-* [`pith hello [FILE]`](#pith-hello-file)
-* [`pith help [COMMAND]`](#pith-help-command)
-* [`pith ip [IPVERSION]`](#pith-ip-ipversion)
-* [`pith kaomoji SEARCH`](#pith-kaomoji-search)
-* [`pith localhost`](#pith-localhost)
-* [`pith mongodb:check`](#pith-mongodbcheck)
-* [`pith mysql:check`](#pith-mysqlcheck)
-* [`pith os:info`](#pith-osinfo)
-* [`pith ssh:rsa`](#pith-sshrsa)
-* [`pith startServer`](#pith-startserver)
 
-## `pith config:get`
+- [`sias config:get`](#sias-configget)
+- [`sias config:set`](#sias-configset)
+- [`sias file:get`](#sias-fileget)
+- [`sias file:set`](#sias-fileset)
+- [`sias git:commit [INPUT]`](#sias-gitcommit-input)
+- [`sias git:p`](#sias-gitp)
+- [`sias git:pull [INPUT]`](#sias-gitpull-input)
+- [`sias git:push`](#sias-gitpush)
+- [`sias goodbye`](#sias-goodbye)
+- [`sias hello [FILE]`](#sias-hello-file)
+- [`sias help [COMMAND]`](#sias-help-command)
+- [`sias ip [IPVERSION]`](#sias-ip-ipversion)
+- [`sias kaomoji SEARCH`](#sias-kaomoji-search)
+- [`sias localhost`](#sias-localhost)
+- [`sias mongodb:check`](#sias-mongodbcheck)
+- [`sias mysql:check`](#sias-mysqlcheck)
+- [`sias os:info`](#sias-osinfo)
+- [`sias ssh:rsa`](#sias-sshrsa)
+- [`sias startServer`](#sias-startserver)
+
+## `sias config:get`
 
 ```
 USAGE
-  $ pith config:get
+  $ sias config:get
 ```
 
 _See code: [src/commands/config/get.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/config/get.ts)_
 
-## `pith config:set`
+## `sias config:set`
 
 ```
 USAGE
-  $ pith config:set
+  $ sias config:set
 ```
 
 _See code: [src/commands/config/set.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/config/set.ts)_
 
-## `pith file:get`
+## `sias file:get`
 
 description file read json/csv
 
 ```
 USAGE
-  $ pith file:get
+  $ sias file:get
 
 OPTIONS
   -h, --help                 desc -> for help
@@ -87,20 +91,20 @@ OPTIONS
 
 _See code: [src/commands/file/get.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/file/get.ts)_
 
-## `pith file:set`
+## `sias file:set`
 
 ```
 USAGE
-  $ pith file:set
+  $ sias file:set
 ```
 
 _See code: [src/commands/file/set.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/file/set.ts)_
 
-## `pith git:commit [INPUT]`
+## `sias git:commit [INPUT]`
 
 ```
 USAGE
-  $ pith git:commit [INPUT]
+  $ sias git:commit [INPUT]
 
 OPTIONS
   -h, --help  show CLI help
@@ -108,13 +112,13 @@ OPTIONS
 
 _See code: [src/commands/git/commit.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/git/commit.ts)_
 
-## `pith git:p`
+## `sias git:p`
 
 git push with promt commit message
 
 ```
 USAGE
-  $ pith git:p
+  $ sias git:p
 
 OPTIONS
   -h, --help  show CLI help
@@ -122,11 +126,11 @@ OPTIONS
 
 _See code: [src/commands/git/p.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/git/p.ts)_
 
-## `pith git:pull [INPUT]`
+## `sias git:pull [INPUT]`
 
 ```
 USAGE
-  $ pith git:pull [INPUT]
+  $ sias git:pull [INPUT]
 
 OPTIONS
   -h, --help  show CLI help
@@ -134,31 +138,31 @@ OPTIONS
 
 _See code: [src/commands/git/pull.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/git/pull.ts)_
 
-## `pith git:push`
+## `sias git:push`
 
 ```
 USAGE
-  $ pith git:push
+  $ sias git:push
 ```
 
 _See code: [src/commands/git/push.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/git/push.ts)_
 
-## `pith goodbye`
+## `sias goodbye`
 
 ```
 USAGE
-  $ pith goodbye
+  $ sias goodbye
 ```
 
 _See code: [src/commands/goodbye.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/goodbye.ts)_
 
-## `pith hello [FILE]`
+## `sias hello [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ pith hello [FILE]
+  $ sias hello [FILE]
 
 OPTIONS
   -f, --force
@@ -166,19 +170,19 @@ OPTIONS
   -n, --name=name  name to print
 
 EXAMPLE
-  $ pith hello
+  $ sias hello
   hello world from ./src/hello.ts!
 ```
 
 _See code: [src/commands/hello.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/hello.ts)_
 
-## `pith help [COMMAND]`
+## `sias help [COMMAND]`
 
-display help for pith
+display help for sias
 
 ```
 USAGE
-  $ pith help [COMMAND]
+  $ sias help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -189,13 +193,13 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3/src/commands/help.ts)_
 
-## `pith ip [IPVERSION]`
+## `sias ip [IPVERSION]`
 
 Get details of ip
 
 ```
 USAGE
-  $ pith ip [IPVERSION]
+  $ sias ip [IPVERSION]
 
 ARGUMENTS
   IPVERSION  (v4|v6|v4sync|v6sync) [default: v4] ip version specify to get details
@@ -206,13 +210,13 @@ OPTIONS
 
 _See code: [src/commands/ip.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/ip.ts)_
 
-## `pith kaomoji SEARCH`
+## `sias kaomoji SEARCH`
 
 emoji play
 
 ```
 USAGE
-  $ pith kaomoji SEARCH
+  $ sias kaomoji SEARCH
 
 ARGUMENTS
   SEARCH  [default: happy] kaomoji to search
@@ -223,11 +227,11 @@ OPTIONS
 
 _See code: [src/commands/kaomoji.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/kaomoji.ts)_
 
-## `pith localhost`
+## `sias localhost`
 
 ```
 USAGE
-  $ pith localhost
+  $ sias localhost
 
 OPTIONS
   -a, --app=app    desc -> enter browser name in which to open
@@ -240,20 +244,20 @@ OPTIONS
 
 _See code: [src/commands/localhost.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/localhost.ts)_
 
-## `pith mongodb:check`
+## `sias mongodb:check`
 
 ```
 USAGE
-  $ pith mongodb:check
+  $ sias mongodb:check
 ```
 
 _See code: [src/commands/mongodb/check.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/mongodb/check.ts)_
 
-## `pith mysql:check`
+## `sias mysql:check`
 
 ```
 USAGE
-  $ pith mysql:check
+  $ sias mysql:check
 
 OPTIONS
   -d, --db=db        [default: crm]
@@ -266,20 +270,20 @@ OPTIONS
 
 _See code: [src/commands/mysql/check.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/mysql/check.ts)_
 
-## `pith os:info`
+## `sias os:info`
 
 ```
 USAGE
-  $ pith os:info
+  $ sias os:info
 ```
 
 _See code: [src/commands/os/info.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/os/info.ts)_
 
-## `pith ssh:rsa`
+## `sias ssh:rsa`
 
 ```
 USAGE
-  $ pith ssh:rsa
+  $ sias ssh:rsa
 
 OPTIONS
   -e, --emai=emai  [default: ashutoshpith@gmail.com]
@@ -288,14 +292,15 @@ OPTIONS
 
 _See code: [src/commands/ssh/rsa.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/ssh/rsa.ts)_
 
-## `pith startServer`
+## `sias startServer`
 
 ```
 USAGE
-  $ pith startServer
+  $ sias startServer
 ```
 
 _See code: [src/commands/startServer.ts](https://github.com/ashutoshpith/sias/blob/v1.0.2/src/commands/startServer.ts)_
+
 <!-- commandsstop -->
 
-# pith
+# sias
