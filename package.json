@@ -1,12 +1,12 @@
 {
-  "name": "pith",
-  "description": "pith commands ",
-  "version": "1.0.0",
+  "name": "sias",
+  "description": "sias commands ",
+  "version": "1.0.3",
   "author": "ashutoshpith @ashutoshpith",
   "bin": {
-    "pith": "./bin/run"
+    "sias": "./bin/run"
   },
-  "bugs": "https://github.com/ashutoshpith/pith/issues",
+  "bugs": "https://github.com/ashutoshpith/sias/issues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.14.0",
@@ -47,7 +47,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/ashutoshpith/pith",
+  "homepage": "https://github.com/ashutoshpith/sias",
   "keywords": [
     "oclif"
   ],
@@ -55,7 +55,7 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "pith",
+    "bin": "sias",
     "plugins": [
       "@oclif/plugin-help"
     ],
@@ -80,7 +80,7 @@
       }
     }
   },
-  "repository": "ashutoshpith/pith",
+  "repository": "ashutoshpith/sias",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
