@@ -12,6 +12,7 @@ export class Check extends Command {
       char: "u",
       default: "zudo",
     }),
+
     pass: flags.string({
       char: "p",
       default: "zudo",

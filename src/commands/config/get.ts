@@ -1,7 +1,7 @@
-import {Command} from "@oclif/command";
+import { Command } from "@oclif/command";
 
-export class Get extends Command{
-    async run(){
-        console.log("get");
-    }
+export class Get extends Command {
+  async run() {
+    console.log("get");
+  }
 }

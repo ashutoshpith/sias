@@ -1,6 +1,5 @@
 import { Command, flags } from "@oclif/command";
 import * as _ from "lodash";
-
 import * as kaomoji from "../structs/emotion/emoji";
 
 export class Kaomoji extends Command {
