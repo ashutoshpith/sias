@@ -1031,4 +1031,4 @@ for (const { words, ascii } of Object.values(dictionary)) {
   for (const word of words) e[word] = ascii;
 }
 
-export = e;
+export default e;

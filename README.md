@@ -22,7 +22,7 @@ $ npm install -g sias
 $ sias COMMAND
 running command...
 $ sias (-v|--version|version)
-sias/1.0.3 linux-x64 node-v12.16.1
+sias/1.0.4 linux-x64 node-v14.15.3
 $ sias --help [COMMAND]
 USAGE
   $ sias COMMAND
@@ -45,7 +45,6 @@ USAGE
 * [`sias hello [FILE]`](#sias-hello-file)
 * [`sias help [COMMAND]`](#sias-help-command)
 * [`sias ip [IPVERSION]`](#sias-ip-ipversion)
-* [`sias kaomoji SEARCH`](#sias-kaomoji-search)
 * [`sias localhost`](#sias-localhost)
 * [`sias mongodb:check`](#sias-mongodbcheck)
 * [`sias mysql:check`](#sias-mysqlcheck)
@@ -56,26 +55,32 @@ USAGE
 ## `sias config:get`
 
 ```
+undefined
+
 USAGE
   $ sias config:get
 ```
 
-_See code: [src/commands/config/get.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/config/get.ts)_
+_See code: [src/commands/config/get.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/config/get.ts)_
 
 ## `sias config:set`
 
 ```
+undefined
+
 USAGE
   $ sias config:set
 ```
 
-_See code: [src/commands/config/set.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/config/set.ts)_
+_See code: [src/commands/config/set.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/config/set.ts)_
 
 ## `sias file:get`
 
 description file read json/csv
 
 ```
+description file read json/csv
+
 USAGE
   $ sias file:get
 
@@ -85,20 +90,24 @@ OPTIONS
   -n, --name=name            desc -> enter name of file
 ```
 
-_See code: [src/commands/file/get.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/file/get.ts)_
+_See code: [src/commands/file/get.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/file/get.ts)_
 
 ## `sias file:set`
 
 ```
+undefined
+
 USAGE
   $ sias file:set
 ```
 
-_See code: [src/commands/file/set.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/file/set.ts)_
+_See code: [src/commands/file/set.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/file/set.ts)_
 
 ## `sias git:commit [INPUT]`
 
 ```
+undefined
+
 USAGE
   $ sias git:commit [INPUT]
 
@@ -106,13 +115,15 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/git/commit.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/git/commit.ts)_
+_See code: [src/commands/git/commit.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/git/commit.ts)_
 
 ## `sias git:p`
 
 git push with promt commit message
 
 ```
+git push with promt commit message
+
 USAGE
   $ sias git:p
 
@@ -120,11 +131,13 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/git/p.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/git/p.ts)_
+_See code: [src/commands/git/p.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/git/p.ts)_
 
 ## `sias git:pull [INPUT]`
 
 ```
+undefined
+
 USAGE
   $ sias git:pull [INPUT]
 
@@ -132,31 +145,37 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/git/pull.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/git/pull.ts)_
+_See code: [src/commands/git/pull.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/git/pull.ts)_
 
 ## `sias git:push`
 
 ```
+undefined
+
 USAGE
   $ sias git:push
 ```
 
-_See code: [src/commands/git/push.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/git/push.ts)_
+_See code: [src/commands/git/push.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/git/push.ts)_
 
 ## `sias goodbye`
 
 ```
+undefined
+
 USAGE
   $ sias goodbye
 ```
 
-_See code: [src/commands/goodbye.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/goodbye.ts)_
+_See code: [src/commands/goodbye.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/goodbye.ts)_
 
 ## `sias hello [FILE]`
 
 describe the command here
 
 ```
+describe the command here
+
 USAGE
   $ sias hello [FILE]
 
@@ -170,13 +189,15 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/hello.ts)_
 
 ## `sias help [COMMAND]`
 
 display help for sias
 
 ```
+display help for <%= config.bin %>
+
 USAGE
   $ sias help [COMMAND]
 
@@ -194,6 +215,8 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3
 Get details of ip
 
 ```
+Get details of ip
+
 USAGE
   $ sias ip [IPVERSION]
 
@@ -204,28 +227,13 @@ OPTIONS
   -h, --help  desc -> for help
 ```
 
-_See code: [src/commands/ip.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/ip.ts)_
-
-## `sias kaomoji SEARCH`
-
-emoji play
-
-```
-USAGE
-  $ sias kaomoji SEARCH
-
-ARGUMENTS
-  SEARCH  [default: happy] kaomoji to search
-
-OPTIONS
-  -h, --help  show CLI help
-```
-
-_See code: [src/commands/kaomoji.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/kaomoji.ts)_
+_See code: [src/commands/ip.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/ip.ts)_
 
 ## `sias localhost`
 
 ```
+undefined
+
 USAGE
   $ sias localhost
 
@@ -238,20 +246,24 @@ OPTIONS
   -p, --port=port  desc -> enter port number to open
 ```
 
-_See code: [src/commands/localhost.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/localhost.ts)_
+_See code: [src/commands/localhost.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/localhost.ts)_
 
 ## `sias mongodb:check`
 
 ```
+undefined
+
 USAGE
   $ sias mongodb:check
 ```
 
-_See code: [src/commands/mongodb/check.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/mongodb/check.ts)_
+_See code: [src/commands/mongodb/check.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/mongodb/check.ts)_
 
 ## `sias mysql:check`
 
 ```
+undefined
+
 USAGE
   $ sias mysql:check
 
@@ -264,20 +276,24 @@ OPTIONS
   -u, --user=user    [default: zudo]
 ```
 
-_See code: [src/commands/mysql/check.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/mysql/check.ts)_
+_See code: [src/commands/mysql/check.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/mysql/check.ts)_
 
 ## `sias os:info`
 
 ```
+undefined
+
 USAGE
   $ sias os:info
 ```
 
-_See code: [src/commands/os/info.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/os/info.ts)_
+_See code: [src/commands/os/info.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/os/info.ts)_
 
 ## `sias ssh:rsa`
 
 ```
+undefined
+
 USAGE
   $ sias ssh:rsa
 
@@ -286,16 +302,18 @@ OPTIONS
   -h, --help       show CLI help
 ```
 
-_See code: [src/commands/ssh/rsa.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/ssh/rsa.ts)_
+_See code: [src/commands/ssh/rsa.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/ssh/rsa.ts)_
 
 ## `sias startServer`
 
 ```
+undefined
+
 USAGE
   $ sias startServer
 ```
 
-_See code: [src/commands/startServer.ts](https://github.com/ashutoshpith/sias/blob/v1.0.3/src/commands/startServer.ts)_
+_See code: [src/commands/startServer.ts](https://github.com/ashutoshpith/sias/blob/v1.0.4/src/commands/startServer.ts)_
 <!-- commandsstop -->
 
 # sias
